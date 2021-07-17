@@ -9,29 +9,129 @@
 </head>
 <body>
 <h1>Dog Forms</h1>
-<!--The action tag in form, it specifies where the form sends the data to, VERY IMPORTANT-->
-<form action="">
-    <p>
-        <label for="username1">Enter a username: </label>
-        <input id="username1" type="text" placeholder="Username">
-    </p>
-    <p>
-        <label for="password1">Enter a password: </label>
-        <input id="password1" type="password" placeholder="Password">
-    </p>
-    <p>
-        <label for="color1">Pick a color: </label>
-        <input id="color1" type="color">
-    </p>
-    <p>
-        <label for="number1">Enter a number</label>
-        <input id="number1" type="number" placeholder="Enter a number">
-    </p>
-    <p>
-        <input type="file">
-        <input type="Submit">
-    </p>
+
+<!--Validation time-->
+<form action="dogValidation">
+  <label for="number1">YOUR MUST CHOOSE A NUMBER</label>
+  <input type="number" id="number1" name="number1" min="0" max="1000" step="5" required>
+  <p>
+    <label for="dogBreed">YOU MUST ENTER A DOG BREED</label>
+    <input type="text" name="dogBreed" id="dogBreed" minlength="4" maxlength="20" required>
+  </p>
+  <button>LETS GOOOOO</button>
 </form>
 
+<!--For inputs, you want a matching label for it, the label basically adds an explanation to the input-->
+<!--The action tag in form, it specifies where the form sends the data to, VERY IMPORTANT-->
+<form action="/dogs">
+  <p>
+    <label for="username">Enter a username: </label>
+    <input id="username" type="text" placeholder="Username" name="username">
+  </p>
+  <p>
+    <label for="password">Enter a password: </label>
+    <input id="password" type="password" placeholder="Password" name="password">
+  </p>
+  <p>
+    <label for="color">Pick a color: </label>
+    <input id="color" type="color" name="color">
+  </p>
+  <p>
+    <label for="number">Enter a number</label>
+    <input id="number" type="number" placeholder="Enter a number" name="number" min="0" max="100" step="5">
+  </p>
+  <p>
+    <input type="file"><br>
+  </p>
+  <!--  This type of submit is better because, the input submit button we cannot change the text inside-->
+  <button type="button">Submit this for more dog pictures</button>
+  <button>This button will submit the form, unlike the other one</button>
+</form>
+
+
+<h2>Using multiple searches from different websites from my own personal website</h2>
+<!--Hyjacking reddit search-->
+<form action="https://www.reddit.com/r/dogs/">
+  <p>
+    <label for="breed">Enter the breed of the dog for Reddit</label>
+    <input type="text" id="breed" name="q">
+  </p>
+  <button>Search Reddit</button>
+</form>
+
+<!--Hyjjacking google search engine-->
+<form action="https://www.google.com/search">
+  <p>
+    <label for="Breed2">Enter the breed of the dog for Google</label>
+    <input type="text" id="Breed2" name="q">
+  </p>
+  <button>Search Google</button>
+</form>
+
+<!--Hijacking youtube search engine-->
+<form action="https://www.youtube.com/results">
+  <p>
+    <label for="Breed3">Enter the breed of the dog for Youtube</label>
+    <input type="text" id="Breed3" name="search_query">
+  </p>
+  <button>Search Youtube</button>
+</form>
+
+<h2>More Inputs!</h2>
+<form action="diogs">
+  <p>
+    <label for="agree">I agree to everything</label>
+    <input type="checkbox" name="agree_tos" id="agree">
+  </p>
+
+  <!--  For the radio button, you will have to put the name to be the same so that you can only choose 1 button at a
+  time, or else you will be able to select all 3 buttons-->
+  <p>
+    <label for="dog1">Goodest Dog 1</label>
+    <input type="radio" name="dog" id="dog1" value="GD1"><br>
+    <label for="dog2">Goodest Dog 2</label>
+    <input type="radio" name="dog" id="dog2" value="GD2"><br>
+    <label for="dog3">Goodest Dog 3</label>
+    <input type="radio" name="dog" id="dog3" value="GD2">
+  </p>
+  <button>Go!</button>
+</form>
+<hr>
+<form action="dogBreed">
+  <p>
+    <label for="selectBreed"></label>
+    <select name="breed" id="selectBreed">
+      <option value="">--Please choose an option--</option>
+      <option value="LabRet">Labrador Retriever</option>
+      <option value="Bulldog">Bulldog</option>
+      <option value="GolRet">Golden Retriever</option>
+      <option value="GerShe">German Shepherd</option>
+      <option value="Poodle">Poodle</option>
+      <option value="Beagle">Beagle</option>
+      <option value="Rott">Rottweiler</option>
+      <option value="none">I don't know</option>
+    </select>
+  </p>
+  <button>Submit Dog Breed</button>
+</form>
+
+<form action="volume">
+  <p>
+    <label for="volumeRange"></label>
+    <input type="range" id="volumeRange" name="volumeRange" min="0" max="1000" step="15">
+  </p>
+  <p>
+    <label for="review">Please leave us any comment as how to improve our services</label><br>
+    <textarea name="review" id="review" cols="30" rows="10">
+    </textarea>
+  </p>
+  <button>Change Volume!</button>
+</form>
+
+<ul>
+  <li><a href="machtml.html">Click here to go back to main page</a></li>
+  <li><a href="dogBreeds.html">Click here to go to Dog Breeds list</a></li>
+  <li><a href="DogTables.html">Click here to go to Dog Tables</a></li>
+</ul>
 </body>
 </html>
