@@ -1,3 +1,107 @@
 h1 {
-    color: pink;
+    text-align: center;
+    /*This makes the font normal, for h1, the default is bold*/
+    font-weight: 400;
+    text-decoration: dotted green overline;
+    letter-spacing: 20px;
+    /*pixels are not amazing with responsive websites, use em instead or something more responsive*/
+    font-size: 10em;
+    /*It will check one at a time for each font, applies the first valid font they can find on the system*/
+    font-family: Calibri, Futura, Arial, Serif;
+
+}
+
+/*For ids, it should be unique per each project*/
+/*Keep Ids to a minimum, there are other better strategies*/
+/*ID>CLASS>ELEMENT^*/
+
+div {
+    /*border sizes are normally in pixels*/
+    /*you need all 3 of them to see the border*/
+    border-width: 10px;
+    border-color: #023047;
+    border-style: solid;
+}
+
+h1::first-letter {
+    color: green;
+}
+
+p::first-line {
+    color: purple;
+}
+
+*::selection {
+    background-color: #d62828;
+}
+
+#p1 {
+    font-weight: 100;
+}
+
+#p2 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: red;
+    background-color: yellow;
+}
+
+/*For classes, like putting stickers on things*/
+.tap {
+    background-color: blue;
+    font-size: 2em;
+}
+
+/*For IDs, use sparingly*/
+#button2 {
+    color: #f4f1de;
+    background-color: #e07a5f;
+}
+
+/*Only changes the button, does not touch the h2*/
+h2 + button {
+    color: magenta;
+    background-color: black;
+}
+
+/*Will only select the span texts in the paragraph, you can make multilayers*/
+p span {
+    color: teal;
+}
+
+/*Changes settings of only the inputs that are passwords*/
+input[type="password"] {
+    color: red;
+}
+
+/*Changes color when you hover over the button*/
+a:hover {
+    color: #ff006e;
+    text-decoration: underline;
+}
+
+/*Changes color when you click on it*/
+a:active {
+    color: #f28482;
+}
+
+p + button {
+    color: red;
+}
+
+button {
+    color: #fb8500;
+    background-color: #023047;
+}
+
+
+p {
+    font-weight: bold;
+    line-height: 1.25;
 }
