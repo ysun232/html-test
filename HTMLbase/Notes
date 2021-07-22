@@ -1,0 +1,37 @@
+/*For ids, it should be unique per each project*/
+/*Keep Ids to a minimum, there are other better strategies*/
+/*ID>CLASS>ELEMENT^*/
+/*Block elements are easier to manipulate than inline elements*/
+/*If you want inline, use inline-block*/
+/*Relative units: */
+
+/*For inline elements, width is ignored, heigh is ignored,
+padding is ok, margin only respect horizontal*/
+/*Makes block level elements to inline, very useful*/
+
+for height and widths, you can also use "%" as to scale things
+EM: relative to its parent element, eg. use this to make h3 always bigger than h1 by setting h3: 3em and h1: 1em
+This is useful when you dont want your buttons or other elements to lose their shape even if the text size is scaled up
+
+For em, if you have nested, it will increase the size multiplicatively, they can stack.
+They can increase very fast and shrink very fast as well, since em is based on the parents font size.
+"Rem" works better if you want relative size, its based upon the base element font size
+
+em and rem are both good, and can be used together depending on the situations
+To change overal rem, you will have to change the "html {}" font-size
+
+rgab(0,0,0, 0 to 1) for transparency. 0 = not transparent, 1 = full transparent, does not affect text
+opacity: all the elements in there will be transparent
+
+position: static(default)
+relative: changes to where it was supposed to be, it still takes up the space of where it was originally
+absolute: its position is anything but static (position depending on the ancestor), determined by its parent
+fixed: its position is determined by the page, it will follow even when youre scrolling
+sticky: relative at first, but after you scroll down a bit, it will be like fixed
+
+"transition" function, you can go from on shape/color to the other, it will transition by itself, and not be janky
+transition: property name | duration | timing function | delay
+there are many many timing functions, go have fun*************
+single out transitions, prevents something down the line
+
+"transform" function, also have fun with this function, allows for animations

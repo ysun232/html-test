@@ -11,9 +11,28 @@ h1 {
 
 }
 
+header {
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+article {
+    font-size: 15px;
+}
+
+ul {
+    font-size: 1.5em;
+}
+
 /*For ids, it should be unique per each project*/
 /*Keep Ids to a minimum, there are other better strategies*/
 /*ID>CLASS>ELEMENT^*/
+/*Block elements are easier to manipulate than inline elements*/
+/*If you want inline, use inline-block*/
+/*Relative units: */
 
 div {
     /*border sizes are normally in pixels*/
@@ -21,6 +40,12 @@ div {
     border-width: 10px;
     border-color: #023047;
     border-style: solid;
+    /*This rounds off the edges of the box, very useful function*/
+    border-radius: 20%;
+    /*Padding is very important, the space between the border and the text*/
+    padding: 20px;
+    /*There are margins by default, the margin is the space between your box and the sides of the window */
+    margin: 10px;
 }
 
 h1::first-letter {
@@ -48,8 +73,18 @@ a {
 }
 
 h2, h3 {
+    margin-left: 0px;
     color: red;
     background-color: yellow;
+    padding-left: 15px;
+    /*For inline elements, width is ignored, heigh is ignored,
+     padding is ok, margin only respect horizontal*/
+    /*Makes block level elements to inline, very useful*/
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding-right: 20px;
+
 }
 
 /*For classes, like putting stickers on things*/
@@ -84,6 +119,11 @@ input[type="password"] {
 a:hover {
     color: #ff006e;
     text-decoration: underline;
+}
+
+body {
+    /*no more space between the content and the sides on the website*/
+    margin: 0px;
 }
 
 /*Changes color when you click on it*/
