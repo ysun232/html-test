@@ -1,0 +1,28 @@
+body {
+    font-size: 10px;
+}
+
+img {
+    float: left;
+    /*You need % so that everything can scale up/down*/
+    width: 31rem;
+    /*max-width: 30%;*/
+    height: 31rem;
+    /*max-height: 30%;*/
+    margin: calc(9% / 6);
+    object-fit: cover;
+}
+
+
+nav {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    border-bottom: solid black;
+    border-width: 2px;
+    margin-left: calc(9% / 6);
+    margin-right: calc(9% / 6);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
