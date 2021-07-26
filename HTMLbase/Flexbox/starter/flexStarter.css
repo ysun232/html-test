@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #023047;
+    width: 90%;
+    /*height: 500px;*/
+    margin: 0 auto;
+    border: 5px solid darkgreen;
+    /*very very useful function*/
+    display: flex;
+    flex-direction: row;
+    /*moves it around*/
+    justify-content: center;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    /*Makes it that all elements will be sorted from the end, works with wrap only*/
+    /*align-content: flex-end;*/
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+    /*flex grow will stretch and distort content, flex-grow or flex-shrink to use*/
+    /*flex-grow: 1;*/
+    /*Flex is just a more condensed way of calling flex-grow and flex-shrink*/
+    /*flex: 1 2;*/
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex: 4 2;
+}

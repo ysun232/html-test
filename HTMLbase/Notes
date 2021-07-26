@@ -43,3 +43,15 @@ background tag: needs to be more precise if you want to squeeze in everything in
 
 Google fonts also free
 take fonts from google, so that every system accessing will be able to see the font
+
+USE "FLEX" ON YOUR WEBPAGES, ITS A VERY VERY POWERFUL AND USEFUL FUNCTION
+flex will fit imagines into the box by itself!
+
+flex-direction and flex-wrap are two settings that go well together to get maximum out of flex
+flex-wrap and align-items can both be used at the same time as to reverse everything
+align-content: controls space between rows or columns
+
+Use the "flex" function to change the size of growing or shrinking, and align as to where to put the scontent
+flex: grow shrink basis;
+
+With @media, you can manipulate how things will look when you change the size of the window
