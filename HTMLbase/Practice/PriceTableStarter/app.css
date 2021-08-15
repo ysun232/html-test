@@ -23,25 +23,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -50,7 +56,7 @@ table {
 html {
     /*Overall width would be 100, or else there will be some funky stuff*/
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif ;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -77,13 +83,13 @@ body {
 .pricing-plan {
     border-bottom: 1px solid #e1f1ff;
 }
+
 .pricing-plan:last-child {
     border-bottom: none;
 }
 
 .pricing-img {
     margin-bottom: 25px;
-    width: 100%;
     max-width: 100%;
 }
 
@@ -95,4 +101,14 @@ body {
 
 .pricing-features {
     margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
 }
