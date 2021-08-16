@@ -7,3 +7,9 @@ Use bootstrap for the general layout of your website and buttons
 </div>
 For responsive image sizing
 no-gutters eliminates the space between the images
+
+****** NAVBAR IS IMPORTANT, sticky-top ******
+bootstrap icons are free, might be useful
+
+shadow, card, carousel(image gallery), function can be fun
+padding and margins shortcuts if you want more detailed control
